@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.artisan.outdoormode">
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="34" />
+
+    <application
+        android:label="Outdoor Brightness"
+        android:icon="@android:drawable/ic_menu_manage">
+
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+
+        <meta-data
+            android:name="xposeddescription"
+            android:value="Enables Outdoor mode brightness option in Samsung Settings" />
+
+        <meta-data
+            android:name="xposedminversion"
+            android:value="93" />
+
+        <meta-data
+            android:name="xposedscope"
+            android:resource="@array/xposed_scope" />
+
+    </application>
+
+</manifest>
