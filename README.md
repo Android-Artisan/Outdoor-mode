@@ -48,6 +48,8 @@ $BUILD_TOOLS/apksigner sign --ks debug.keystore \
     --out outdoor-brightness.apk module.aligned.apk
 ```
 
+Thank you @salvogiangri for giving me this idea through your UN1CA project
+
 ## License
 
 [GPLv3](LICENSE)
