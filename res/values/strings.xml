@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_label">Outdoor mode</string>
+    <string name="toggle_failed">Couldn\'t change Outdoor mode. Make sure the module scope is enabled in LSPosed.</string>
+</resources>
