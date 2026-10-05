@@ -39,6 +39,16 @@
             </intent-filter>
         </service>
 
+        <activity
+            android:name="com.artisan.outdoormode.OutdoorTilePreferencesActivity"
+            android:exported="true"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
