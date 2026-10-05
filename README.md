@@ -5,7 +5,7 @@ An LSPosed module that enables the **Outdoor brightness mode** toggle in Samsung
 ## What it does
 
 1. Forces `SecOutDoorModePreferenceController.isAvailable()` to return `true`, making the Outdoor mode brightness option visible in **Settings → Display** on Samsung devices that don't show it by default.
-2. Adds an **Outdoor mode** Quick Settings tile that turns the mode on or off from the shade.
+2. Adds an **Outdoor mode** Quick Settings tile that turns the mode on or off from the shade. Long pressing the tile opens **Settings → Display**, instead of the usual app info screen.
 
 The tile flips the `display_outdoor_mode` system setting, the same value the Settings switch writes, so the framework applies the brightness change on its own.
 
@@ -33,6 +33,8 @@ Granting the app `WRITE_SECURE_SETTINGS` does not help - the check runs before t
 4. Reboot (system_server is only injected at boot, so the provider hook needs it)
 5. Add the **Outdoor mode** tile from the Quick Settings edit panel
 6. Tap the tile once: the first tap asks for the **Modify system settings** access, after which toggling is instant
+
+Tip: long press the tile to jump to the full Outdoor mode screen in Settings → Display.
 
 If the tile does nothing, check that both scopes are enabled and that the app was granted *Modify system settings*.
 
